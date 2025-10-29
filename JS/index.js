@@ -10,12 +10,13 @@ faqQuestion.forEach((question) => {
       answer.style.maxHeight = null;
     } else {
       // Close all other answers
-      document.querySelectorAll(".faq-answer").forEach((item) => {
-        item.classList.remove("open");
-        item.style.maxHeight = null;
-      });
+      // document.querySelectorAll(".answers").forEach((item) => {
+      //   item.classList.remove("open");
+      //   item.style.maxHeight = null;
+      // });
       answer.classList.add("open");
-      answer.style.maxHeight = answer.scrollHeight + "px";
+      answer.style.maxHeight = answer.scrollHeight + "px";//auto adjust height
+      // answer.style.maxHeight = "500" + "px";//to mannaually set height
     }
 
     // Update the icon

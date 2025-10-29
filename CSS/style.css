@@ -10,7 +10,7 @@ body {
   background-color: hsl(275, 100%, 97%);
 }
 
-header {
+.bg-desktop{
   height: 30vh;
   background-image: url(/assets/images/background-pattern-desktop.svg);
   background-repeat: no-repeat;
@@ -81,7 +81,7 @@ main {
 
 .answers.open {
   opacity: 1;
-  max-height: none; /* This will be set dynamically by JavaScript */
+  max-height: none; /*This will be set dynamically by JavaScript*/
 }
 
 .answers p {
@@ -98,4 +98,18 @@ main {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 600px) {
+
+  /* .bg-desktop{
+    display: none;
+  } */
+  .bg-mobile {
+    background-image: url('/assets/images/background-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-color: hsl(275, 100%, 97%);
+  }
 }
