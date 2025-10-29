@@ -110,6 +110,10 @@ main {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    background-color: hsl(275, 100%, 97%);
+    /* background-color: hsl(275, 100%, 97%); */
   }
+
+  main {
+  max-width: 300px;
+}
 }
